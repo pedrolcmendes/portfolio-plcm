@@ -1,0 +1,84 @@
+.about {
+  padding: 120px 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  border-top: 1px solid var(--border);
+}
+
+.about__intro {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+/* Foto */
+.about__photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+.about__photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 8px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.about__photo-border {
+  position: absolute;
+  top: 6px; left: 6px;
+  width: 110px; height: 110px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.about__bio p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+.about__bio strong { color: var(--text); font-weight: 500; }
+
+/* Cards de experiência */
+.about__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.exp-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--border);
+  transition: background 0.25s;
+}
+.exp-card:hover { border-color: rgba(139,92,246,.25); transform: translateX(4px); }
+.exp-card:hover::before { background: var(--primary); }
+
+.exp-card__role    { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+.exp-card__company { font-family: var(--font-mono); font-size: 11px; color: var(--primary); letter-spacing: 0.08em; }
+.exp-card__period  { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: 6px; }
+.exp-card__desc    { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .about { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
+  .about__intro { flex-direction: column; }
+}
