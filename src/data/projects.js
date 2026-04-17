@@ -1,0 +1,46 @@
+export const projects = [
+  {
+    id: '01',
+    name: 'Viaje Já',
+    desc: 'Interface web voltada para viagens, com foco em experiência do usuário e apresentação visual de destinos e informações turísticas.',
+    stack: ['HTML', 'CSS', 'JS'],
+    link: { label: 'Ver no GitHub', url: 'https://github.com/pedrolcmendes/viajeja-interface' },
+  },
+  {
+    id: '02',
+    name: 'Consumo Inteligente',
+    desc: 'Sistema de controle e monitoramento de consumo inteligente, com foco em usabilidade e clareza na apresentação dos dados.',
+    stack: ['HTML', 'CSS', 'JS'],
+    link: { label: 'Ver no GitHub', url: 'https://github.com/pedrolcmendes/AEP_CI' },
+  },
+  {
+    id: '03',
+    name: 'Gerenciador de Produtos',
+    desc: 'API RESTful em Java com CRUD completo para gerenciamento de produtos. Back-end focado em boas práticas de arquitetura.',
+    stack: ['Java', 'RESTful', 'CRUD'],
+    link: { label: 'Ver no GitHub', url: 'https://github.com/pedrolcmendes/testJava-produtos' },
+  },
+  {
+    id: '04',
+    name: 'SWS — Storm Web & Systems',
+    desc: 'Site institucional da empresa de desenvolvimento que co-fundei. Soluções digitais modernas para negócios no ambiente digital.',
+    stack: ['Web', 'Design', 'Empresa'],
+    link: { label: 'GitHub', url: 'https://github.com/SWSCompany/SWS-site' },
+    badge: 'Co-fundador',
+  },
+  {
+    id: '05',
+    name: 'Montend',
+    desc: 'Projeto freelancer desenvolvido na plataforma UOLHost. Entrega de solução web completa para cliente real.',
+    stack: ['No-code', 'Freelancer', 'UOLHost'],
+    link: { label: 'Ver Site', url: 'https://montend.com.br/' },
+    badge: 'Freelance',
+  },
+  {
+    id: '06',
+    name: 'UI/UX Design Projects',
+    desc: 'Prototipações no Figma com foco em UX e identidade visual. Wireframes, fluxos de usuário e design de telas para sistemas web.',
+    stack: ['Figma', 'UI/UX', 'Protótipo'],
+    badge: 'Em construção',
+  },
+]
