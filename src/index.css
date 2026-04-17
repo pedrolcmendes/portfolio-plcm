@@ -113,3 +113,64 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 28px;
 }
+/* 
+   LIGHT MODE — overrides globais
+*/
+[data-theme='light'] {
+  --primary:      #7C3AED;
+  --primary-dim:  #5B21B6;
+  --primary-glow: rgba(124, 58, 237, 0.12);
+  --bg:     #f5f4f0;
+  --bg2:    #ebebea;
+  --bg3:    #e0dedd;
+  --border: rgba(0, 0, 0, 0.08);
+  --text:   #1a1a1a;
+  --muted:  #6b6b6b;
+  --white:  #0d0d0f;
+}
+
+/* About */
+[data-theme='light'] .exp-card {
+  background: #fff;
+  border-color: rgba(0,0,0,0.08);
+}
+[data-theme='light'] .exp-card__role    { color: #0d0d0f; }
+[data-theme='light'] .exp-card__desc    { color: #6b6b6b; }
+
+/* Skills */
+[data-theme='light'] .skills           { background: #e8e7e3; }
+[data-theme='light'] .skill-group      { background: #f0efeb; border-color: rgba(0,0,0,0.08); }
+[data-theme='light'] .skill-tag        { background: rgba(0,0,0,.04); color: #1a1a1a; border-color: rgba(0,0,0,0.1); }
+[data-theme='light'] .skill-tag--learning { background: transparent; color: var(--primary-dim); border-color: rgba(124,58,237,.3); }
+
+/* Projects */
+[data-theme='light'] .project-card     { background: #fff; border-color: rgba(0,0,0,0.08); }
+[data-theme='light'] .project-card__name { color: #0d0d0f; }
+[data-theme='light'] .project-card__desc { color: #6b6b6b; }
+[data-theme='light'] .project-card__num  { color: rgba(0,0,0,.04); }
+[data-theme='light'] .project-card:hover .project-card__num { color: rgba(124,58,237,.08); }
+[data-theme='light'] .project-card__footer { border-color: rgba(0,0,0,0.08); }
+
+/* Contact */
+[data-theme='light'] .contact          { background: #e8e7e3; }
+[data-theme='light'] .contact-item     { background: transparent; }
+[data-theme='light'] .contact__big     { color: #0d0d0f; }
+
+/* Footer */
+[data-theme='light'] .footer           { border-color: rgba(0,0,0,0.08); }
+
+/* Navbar */
+[data-theme='light'] .navbar--scrolled { background: rgba(245,244,240,0.9); border-color: rgba(0,0,0,0.08); }
+
+/* Hero */
+[data-theme='light'] .hero__name       { color: #0d0d0f; }
+[data-theme='light'] .hero__photo-tag  { background: #fff; border-color: rgba(0,0,0,0.1); }
+[data-theme='light'] .hero__stats      { border-color: rgba(0,0,0,0.08); }
+
+/* Títulos de seção */
+[data-theme='light'] .section-title    { color: #0d0d0f; }
+
+/* Botões */
+[data-theme='light'] .btn-primary      { color: #fff; }
+[data-theme='light'] .btn-outline      { border-color: rgba(0,0,0,0.15); }
+[data-theme='light'] .btn-outline:hover { border-color: var(--primary); }
